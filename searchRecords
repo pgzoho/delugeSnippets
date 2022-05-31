@@ -1,0 +1,12 @@
+
+//
+// searchRecords
+//
+
+search = "(Email:equals:" + input.Email + ")";
+response = zoho.crm.searchRecords("Partners",search);
+for each  rep in response
+{
+	info rep.get("Name");
+	info rep.get("id");
+}
