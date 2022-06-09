@@ -1,0 +1,11 @@
+// Example of invoke a API without parameters
+
+url = "https://subscriptions.zoho.com/api/v1/subscriptions/{subscription_id}"
+
+response = invokeurl
+[
+	url :theurl
+	type :POST
+	connection:"zoho_crm"
+];
+info "Invoke Response" + response;
