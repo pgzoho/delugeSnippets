@@ -1,0 +1,14 @@
+// CRM Bulk Update
+//https://www.zoho.com/deluge/help/crm/bulk-update-records.html
+
+
+//List for containing the data map for bulk update
+updateList = List();
+//Data Map for Lead#1
+recordMap1 = {"id":"3171565000000600001", "Company":"Zylker", "Last_Name":"Daly", "First_Name":"Paul", "Email":"p.daly@zylker.com"};
+//Data Map for Lead#2
+recordMap2 = {"id":"3171565000000600002", "Company":"Tycoon", "Last_Name":"Richard", "First_Name":"Brian", "Email":"brian@villa.com"};
+//Add both leads' data to a list
+updateList.add(recordMap1);
+updateList.add(recordMap2);
+leadInfo = zoho.crm.bulkUpdate("Leads", updateList);
