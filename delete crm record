@@ -1,0 +1,9 @@
+// Delete CRM Record Example
+// https://www.zoho.com/developer/help/scripting/delete-records.html
+
+deleteRecordMap = map();
+deleteRecordMap.put("module", "Partners_X_Accounts");
+deleteRecordMap.put("id",pxa_id);
+deleteResp = zoho.crm.invokeConnector("crm.delete", deleteRecordMap);
+info deleteResp;
+}
