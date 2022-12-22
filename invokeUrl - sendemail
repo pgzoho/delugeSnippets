@@ -1,0 +1,9 @@
+https://www.zoho.com/deluge/help/misc-statements/send-mail.html
+
+sendmail
+[
+from: zoho.adminuserid
+to: <to_address>
+subject: <subject>
+message: <message> (HTML of the template)
+]
