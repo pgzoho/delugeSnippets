@@ -1,0 +1,13 @@
+// Loop Counter
+// Created by Susan - PG
+//
+// Use Example
+// count = loop_count(5);
+// for each x in count {
+//  this will loop 5 times
+// }
+//
+interationString = "".leftPad(count - 1);
+stringLenght = interationString.size();
+listPads = interationString.replaceAll(" ",",").toList();
+return listPads;
